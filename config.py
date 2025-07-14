@@ -5,11 +5,11 @@ class Config(object):
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
     
     # Telegram API ID & Hash (from environment variables)
-    API_ID = int(os.environ.get("API_ID", 10720863))
-    API_HASH = os.environ.get("API_HASH", "2405be04691f86d83e96bdc7c54feb1c")
+    API_ID = int(os.environ.get("API_ID", ))
+    API_HASH = os.environ.get("API_HASH", "")
     
     # Admin IDs (comma-separated in env, converted to list of integers)
-    ADMIN_ID = [int(admin_id) for admin_id in os.environ.get("ADMIN_ID", "6947378236").split(",")]
+    ADMIN_ID = [int(admin_id) for admin_id in os.environ.get("ADMIN_ID", "").split(",")]
     
     # MongoDB URL (from environment variable)
     DB_URL = os.environ.get("DB_URL", "")
